@@ -21,8 +21,7 @@ public class PhanSo {
         this.mau = p.mau;
     }
 
-    public void nhapPhanSo() {
-        Scanner scanner = new Scanner(System.in);
+    public void nhapPhanSo(Scanner scanner) {
 
         System.out.print("Nhap tu so: ");
 
@@ -36,7 +35,6 @@ public class PhanSo {
             this.mau = scanner.nextInt();
         } while (tu == 0);
 
-        scanner.close();
     }
 
     @Override
