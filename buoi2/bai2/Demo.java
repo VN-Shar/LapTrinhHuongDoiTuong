@@ -12,6 +12,7 @@ public class Demo {
         System.out.println("Phan so 1: " + ps1);
 
         PhanSo ps2 = new PhanSo(4, 16);
+        System.out.println(ps2);
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhap phan so: ");
