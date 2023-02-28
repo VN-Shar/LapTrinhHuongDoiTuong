@@ -21,15 +21,12 @@ public class ToaDo {
         this.x = p.x;
     }
 
-    public void nhapToaDo() {
-        Scanner scanner = new Scanner(System.in);
+    public void nhapToaDo(Scanner scanner) {
 
         System.out.print("Nhap x: ");
         this.x = scanner.nextInt();
         System.out.print("Nhap y: ");
         this.y = scanner.nextInt();
-
-        scanner.close();
     }
 
     @Override

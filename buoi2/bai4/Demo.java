@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class Demo {
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
         NhanVien nv1 = new NhanVien();
         NhanVien nv2 = new NhanVien("111", "2343", 1);
         NhanVien nv3 = new NhanVien();
-        nv3.nhapNhanVien();
+        nv3.nhapNhanVien(scanner);
 
-        Scanner scanner = new Scanner(System.in);
-
+        scanner.nextLine();
         System.out.print("Nhap ten: ");
         nv1.setHoTen(scanner.nextLine());
 
@@ -31,7 +31,6 @@ public class Demo {
             nv = nv3;
         }
 
-        System.out.print("Nhan vien co he so luong max: ");
-        System.out.println(nv);
+        System.out.println("Nhan vien co he so luong max: " + nv);
     }
 }

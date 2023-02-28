@@ -25,8 +25,7 @@ public class NhanVien {
         soLuongNhanVien++;
     }
 
-    public void nhapNhanVien() {
-        Scanner scanner = new Scanner(System.in);
+    public void nhapNhanVien(Scanner scanner) {
 
         System.out.print("Nhap ma: ");
         maSo = scanner.nextLine();
@@ -34,10 +33,9 @@ public class NhanVien {
         System.out.print("Nhap ten: ");
         hoTen = scanner.nextLine();
 
-        System.out.println("Luong trung binh: ");
+        System.out.print("He so luong: ");
         hsl = scanner.nextFloat();
 
-        scanner.close();
     }
 
     public String getMaSo() {
@@ -68,11 +66,9 @@ public class NhanVien {
         return luongTrungBinh * hsl;
     }
 
-    public static void nhapLuongTrungBinh() {
+    public static void nhapLuongTrungBinh(Scanner scanner) {
         System.out.print("Nhap luong trung binh: ");
-        Scanner scanner = new Scanner(System.in);
         luongTrungBinh = scanner.nextFloat();
-        scanner.close();
     }
 
     public static void inSoLuongNhanVien() {
