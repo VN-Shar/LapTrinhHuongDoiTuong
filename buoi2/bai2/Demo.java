@@ -18,9 +18,9 @@ public class Demo {
         System.out.print("Nhap phan so: ");
         PhanSo ps3 = new PhanSo(scanner.nextInt(), scanner.nextInt());
 
-        System.out.println(ps1.cong(ps3).rutGon());
+        System.out.println("Cong:" + ps1.cong(ps3).rutGon());
 
-        System.out.println(new PhanSo(ps1).nhan(ps2).rutGon());
+        System.out.println("Nhan: " + new PhanSo(ps1.cong(ps3)).nhan(ps2).rutGon());
 
         scanner.close();
     }

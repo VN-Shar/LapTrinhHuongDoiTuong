@@ -39,6 +39,7 @@ public class PhanSo {
 
     @Override
     public String toString() {
+
         return tu + "/" + mau;
     }
 
@@ -71,7 +72,7 @@ public class PhanSo {
     }
 
     public PhanSo tru(PhanSo p) {
-        return new PhanSo(p.tu * this.mau - p.mau * this.tu, p.mau * this.mau);
+        return new PhanSo(p.mau * this.tu - p.tu * this.mau, p.mau * this.mau);
     }
 
     public PhanSo nhan(PhanSo p) {
